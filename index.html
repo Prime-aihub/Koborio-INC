@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOBORIO INC</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+
+  <img 
+    src="logo/koborio-logo.png.png"
+    alt="KOBORIO INC"
+    class="logo-img"
+  >
+
+</div>
+
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#customization">Customization</a>
+      <a href="#wholesale">Wholesale</a>
+      <a href="#partner">Partner</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>KOBORIO INC</h1>
+
+    <p>
+      Neon Streetwear Fashion Brand with Premium Oversized,
+      Regular Fit & French Terry T-Shirts.
+    </p>
+
+    <a href="#products" class="btn">SHOP NOW</a>
+  </div>
+
+</section>
+
+<section id="products">
+
+  <h2 class="section-title">OUR COLLECTION</h2>
+
+  <div class="products-grid">
+
+    <!-- PRODUCT TEMPLATE START -->
+
+    <!-- PRODUCT 1 -->
+    <div class="card">
+
+      <img src="images/design1.jpg" alt="Naga Pride">
+
+      <div class="card-content">
+
+        <h3>Naga Pride</h3>
+
+        <div class="price">₹510 x 1 = ₹510</div>
+
+        <div class="selectors">
+
+          <!-- SIZE -->
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+
+          <!-- FABRIC -->
+          <select>
+            <option>Pure Cotton</option>
+            <option>French Terry</option>
+            <option>Poly Cotton</option>
+          </select>
+
+          <!-- FIT TYPE -->
+          <select class="fitType" onchange="updatePrice(this)">
+            <option value="regular">Regular</option>
+            <option value="oversized">Oversized</option>
+          </select>
+
+          <!-- QUANTITY -->
+          <input
+            type="number"
+            value="1"
+            min="1"
+            class="qtyInput"
+            onchange="updatePrice(this)"
+          >
+
+        </div>
+
+        <button class="btn" onclick="orderNow(this,'Naga Pride')">
+          Order On WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PRODUCT 2 -->
+    <div class="card">
+
+      <img src="images/design2.jpg" alt="Ethnic Edge">
+
+      <div class="card-content">
+
+        <h3>Ethnic Edge</h3>
+
+        <div class="price">₹510 x 1 = ₹510</div>
+
+        <div class="selectors">
+
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+
+          <select>
+            <option>Pure Cotton</option>
+            <option>French Terry</option>
+            <option>Poly Cotton</option>
+          </select>
+
+          <select class="fitType" onchange="updatePrice(this)">
+            <option value="regular">Regular</option>
+            <option value="oversized">Oversized</option>
+          </select>
+
+          <input
+            type="number"
+            value="1"
+            min="1"
+            class="qtyInput"
+            onchange="updatePrice(this)"
+          >
+
+        </div>
+
+        <button class="btn" onclick="orderNow(this,'Ethnic Edge')">
+          Order On WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PRODUCT 3 -->
+    <div class="card">
+
+      <img src="images/design3.jpg" alt="Strength N Soul">
+
+      <div class="card-content">
+
+        <h3>Strength N Soul</h3>
+
+        <div class="price">₹510 x 1 = ₹510</div>
+
+        <div class="selectors">
+
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+
+          <select>
+            <option>Pure Cotton</option>
+            <option>French Terry</option>
+            <option>Poly Cotton</option>
+          </select>
+
+          <select class="fitType" onchange="updatePrice(this)">
+            <option value="regular">Regular</option>
+            <option value="oversized">Oversized</option>
+          </select>
+
+          <input
+            type="number"
+            value="1"
+            min="1"
+            class="qtyInput"
+            onchange="updatePrice(this)"
+          >
+
+        </div>
+
+        <button class="btn" onclick="orderNow(this,'Strength N Soul')">
+          Order On WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PRODUCT 4 -->
+    <div class="card">
+
+      <img src="images/design4.jpg" alt="Born Traditional">
+
+      <div class="card-content">
+
+        <h3>Born Traditional</h3>
+
+        <div class="price">₹510 x 1 = ₹510</div>
+
+        <div class="selectors">
+
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+
+          <select>
+            <option>Pure Cotton</option>
+            <option>French Terry</option>
+            <option>Poly Cotton</option>
+          </select>
+
+          <select class="fitType" onchange="updatePrice(this)">
+            <option value="regular">Regular</option>
+            <option value="oversized">Oversized</option>
+          </select>
+
+          <input
+            type="number"
+            value="1"
+            min="1"
+            class="qtyInput"
+            onchange="updatePrice(this)"
+          >
+
+        </div>
+
+        <button class="btn" onclick="orderNow(this,'Born Traditional')">
+          Order On WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PRODUCT 5 -->
+    <div class="card">
+
+      <img src="images/design5.jpg" alt="Tribal Geometry">
+
+      <div class="card-content">
+
+        <h3>Tribal Geometry</h3>
+
+        <div class="price">₹510 x 1 = ₹510</div>
+
+        <div class="selectors">
+
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+
+          <select>
+            <option>Pure Cotton</option>
+            <option>French Terry</option>
+            <option>Poly Cotton</option>
+          </select>
+
+          <select class="fitType" onchange="updatePrice(this)">
+            <option value="regular">Regular</option>
+            <option value="oversized">Oversized</option>
+          </select>
+
+          <input
+            type="number"
+            value="1"
+            min="1"
+            class="qtyInput"
+            onchange="updatePrice(this)"
+          >
+
+        </div>
+
+        <button class="btn" onclick="orderNow(this,'Tribal Geometry')">
+          Order On WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PRODUCT 6 -->
+    <div class="card">
+
+      <img src="images/design6.jpg" alt="Naga Roots">
+
+      <div class="card-content">
+
+        <h3>Naga Roots</h3>
+
+        <div class="price">₹510 x 1 = ₹510</div>
+
+        <div class="selectors">
+
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+
+          <select>
+            <option>Pure Cotton</option>
+            <option>French Terry</option>
+            <option>Poly Cotton</option>
+          </select>
+
+          <select class="fitType" onchange="updatePrice(this)">
+            <option value="regular">Regular</option>
+            <option value="oversized">Oversized</option>
+          </select>
+
+          <input
+            type="number"
+            value="1"
+            min="1"
+            class="qtyInput"
+            onchange="updatePrice(this)"
+          >
+
+        </div>
+
+        <button class="btn" onclick="orderNow(this,'Naga Roots')">
+          Order On WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PRODUCT 7 -->
+    <div class="card">
+
+      <img src="images/design7.jpg" alt="Warrior Soul">
+
+      <div class="card-content">
+
+        <h3>Warrior Soul</h3>
+
+        <div class="price">₹510 x 1 = ₹510</div>
+
+        <div class="selectors">
+
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+
+          <select>
+            <option>Pure Cotton</option>
+            <option>French Terry</option>
+            <option>Poly Cotton</option>
+          </select>
+
+          <select class="fitType" onchange="updatePrice(this)">
+            <option value="regular">Regular</option>
+            <option value="oversized">Oversized</option>
+          </select>
+
+          <input
+            type="number"
+            value="1"
+            min="1"
+            class="qtyInput"
+            onchange="updatePrice(this)"
+          >
+
+        </div>
+
+        <button class="btn" onclick="orderNow(this,'Warrior Soul')">
+          Order On WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PRODUCT 8 -->
+    <div class="card">
+
+      <img src="images/design8.jpg" alt="Elegance In Tradition">
+
+      <div class="card-content">
+
+        <h3>Elegance In Tradition</h3>
+
+        <div class="price">₹510 x 1 = ₹510</div>
+
+        <div class="selectors">
+
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+
+          <select>
+            <option>Pure Cotton</option>
+            <option>French Terry</option>
+            <option>Poly Cotton</option>
+          </select>
+
+          <select class="fitType" onchange="updatePrice(this)">
+            <option value="regular">Regular</option>
+            <option value="oversized">Oversized</option>
+          </select>
+
+          <input
+            type="number"
+            value="1"
+            min="1"
+            class="qtyInput"
+            onchange="updatePrice(this)"
+          >
+
+        </div>
+
+        <button class="btn" onclick="orderNow(this,'Elegance In Tradition')">
+          Order On WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PRODUCT 9 -->
+    <div class="card">
+
+      <img src="images/design9.jpg" alt="Soul Of The Tribe">
+
+      <div class="card-content">
+
+        <h3>Soul Of The Tribe</h3>
+
+        <div class="price">₹510 x 1 = ₹510</div>
+
+        <div class="selectors">
+
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+
+          <select>
+            <option>Pure Cotton</option>
+            <option>French Terry</option>
+            <option>Poly Cotton</option>
+          </select>
+
+          <select class="fitType" onchange="updatePrice(this)">
+            <option value="regular">Regular</option>
+            <option value="oversized">Oversized</option>
+          </select>
+
+          <input
+            type="number"
+            value="1"
+            min="1"
+            class="qtyInput"
+            onchange="updatePrice(this)"
+          >
+
+        </div>
+
+        <button class="btn" onclick="orderNow(this,'Soul Of The Tribe')">
+          Order On WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- PRODUCT 10 -->
+    <div class="card">
+
+      <img src="images/design10.jpg" alt="Soul Of The Tribe II">
+
+      <div class="card-content">
+
+        <h3>Soul Of The Tribe II</h3>
+
+        <div class="price">₹510 x 1 = ₹510</div>
+
+        <div class="selectors">
+
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+
+          <select>
+            <option>Pure Cotton</option>
+            <option>French Terry</option>
+            <option>Poly Cotton</option>
+          </select>
+
+          <select class="fitType" onchange="updatePrice(this)">
+            <option value="regular">Regular</option>
+            <option value="oversized">Oversized</option>
+          </select>
+
+          <input
+            type="number"
+            value="1"
+            min="1"
+            class="qtyInput"
+            onchange="updatePrice(this)"
+          >
+
+        </div>
+
+        <button class="btn" onclick="orderNow(this,'Soul Of The Tribe II')">
+          Order On WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="customization">
+
+  <h2 class="section-title">SPECIAL CUSTOMIZATION</h2>
+
+  <div class="glass-box">
+
+    <p>
+      Create your own custom t-shirt and upload your design directly on WhatsApp.
+    </p>
+
+    <div class="custom-grid">
+
+      <select id="fabric">
+        <option>Pure Cotton</option>
+        <option>French Terry</option>
+        <option>Poly Cotton</option>
+      </select>
+
+      <select id="fitType">
+        <option>Regular Fit</option>
+        <option>Oversized</option>
+        <option>Drop Shoulder</option>
+      </select>
+
+      <select id="printType">
+        <option>A4 Print</option>
+        <option>Small Logo</option>
+        <option>Front & Back</option>
+      </select>
+
+      <select id="colorType">
+        <option>Front Side Print</option>
+         <option>Back Side Print</option>
+        <option>Front + Back Print</option>
+      </select>
+
+    </div>
+
+    <button class="btn custom-btn" onclick="customOrder()">
+      Proceed To WhatsApp
+    </button>
+
+  </div>
+
+</section>
+
+
+<section id="wholesale">
+
+  <h2 class="section-title">WHOLESALE</h2>
+
+  <div class="glass-box">
+
+    <p>
+      Bulk orders available for resellers, events, startups and fashion brands.
+    </p>
+
+    <button class="btn" onclick="wholesaleInquiry()">
+      Contact For Wholesale
+    </button>
+
+  </div>
+
+</section>
+
+
+<section id="partner">
+
+  <h2 class="section-title">BECOME A RETAIL PARTNER</h2>
+
+  <div class="glass-box">
+
+    <p>
+      Partner with KOBORIO INC and start selling premium streetwear.
+    </p>
+
+    <button class="btn" onclick="partnerInquiry()">
+      Become Partner
+    </button>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <h2>KOBORIO INC</h2>
+
+    <p>
+      Premium Neon Streetwear Brand
+    </p>
+
+    <div class="footer-details">
+
+      <p>
+        📍 Palava Lakeshore Greens, Dombivli East,
+        Thane, Mumbai - 421204
+      </p>
+
+      <p>
+        📞 +91 9004130508 / +91 7304888391
+      </p>
+
+    </div>
+
+
+    <div class="social-links">
+
+      <a
+        href="https://www.instagram.com/koborioinc/"
+        target="_blank"
+        class="instagram-btn"
+      >
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+          alt="Instagram"
+        >
+
+        Follow Us On Instagram
+
+      </a>
+
+    </div>
+
+    <p class="copyright">
+      © 2026 KOBORIO INC
+    </p>
+
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
