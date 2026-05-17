@@ -478,3 +478,127 @@ input{
 
   line-height:1.5;
 }
+
+/* ============================= */
+/* URBAN CHAOS COLLECTION */
+/* ============================= */
+
+#urban-chaos{
+  margin-top:100px;
+}
+
+.collection-desc{
+  text-align:center;
+  color:#bbbbbb;
+  max-width:760px;
+  margin:auto;
+  margin-top:-25px;
+  margin-bottom:40px;
+  line-height:1.8;
+  font-size:0.95rem;
+  letter-spacing:0.5px;
+}
+
+.chaos-title{
+
+  color:#ff0055;
+
+  text-shadow:
+    0 0 10px #ff0055,
+    0 0 25px #ff0055,
+    0 0 45px rgba(255,0,85,0.5);
+}
+
+.chaos-card{
+
+  border:1px solid rgba(255,0,85,0.25);
+
+  background:
+    rgba(255,255,255,0.04);
+
+  transition:0.4s;
+}
+
+.chaos-card:hover{
+
+  transform:
+    translateY(-12px)
+    scale(1.02);
+
+  box-shadow:
+    0 0 30px rgba(255,0,85,0.25);
+
+  border:
+    1px solid rgba(255,0,85,0.45);
+}
+
+.chaos-tag{
+
+  display:inline-block;
+
+  padding:7px 16px;
+
+  border-radius:40px;
+
+  background:
+    rgba(255,0,85,0.12);
+
+  color:#ff4f8b;
+
+  font-size:0.72rem;
+
+  letter-spacing:1px;
+
+  margin-bottom:14px;
+
+  border:
+    1px solid rgba(255,0,85,0.25);
+
+  text-transform:uppercase;
+}
+
+.chaos-btn{
+
+  background:#ff0055;
+
+  color:white;
+}
+
+.chaos-btn:hover{
+
+  box-shadow:
+    0 0 25px rgba(255,0,85,0.55);
+}
+
+#urban-chaos .price{
+
+  color:#ff4f8b;
+
+  text-shadow:
+    0 0 10px rgba(255,0,85,0.4);
+}
+
+#urban-chaos .shipping-price,
+#urban-chaos .final-total{
+
+  color:#ff4f8b;
+}
+
+#urban-chaos select,
+#urban-chaos input{
+
+  border:
+    1px solid rgba(255,0,85,0.18);
+}
+
+#urban-chaos select:focus,
+#urban-chaos input:focus{
+
+  outline:none;
+
+  border:
+    1px solid rgba(255,0,85,0.45);
+
+  box-shadow:
+    0 0 15px rgba(255,0,85,0.2);
+}
