@@ -150,6 +150,18 @@ section{
   font-family:'Orbitron',sans-serif;
 }
 
+.collection-desc{
+  text-align:center;
+  color:#bbbbbb;
+  max-width:760px;
+  margin:auto;
+  margin-top:-25px;
+  margin-bottom:40px;
+  line-height:1.8;
+  font-size:0.95rem;
+  letter-spacing:0.5px;
+}
+
 .pricing-note{
   text-align:center;
   color:#00ff88;
