@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>KOBORIO RATINGS</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="reviews.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">
+      KOBORIO RATINGS
+    </div>
+
+    <a href="index.html" class="back-btn">
+      ← Back To Store
+    </a>
+
+  </header>
+
+
+
+
+
+  <section class="hero">
+
+    <h1>
+      HALL OF WARRIORS
+    </h1>
+
+    <p>
+      Join the KOBORIO tribe.
+      Share your experience, rate your order
+      and become part of the warrior community.
+    </p>
+
+  </section>
+
+
+
+
+
+  <section class="review-layout">
+
+    <!-- LEFT -->
+
+    <div class="review-form-box">
+
+      <h2 class="section-title">
+        SUBMIT REVIEW
+      </h2>
+
+      <div class="input-group">
+
+        <label>
+          Your Name
+        </label>
+
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+        >
+
+      </div>
+
+
+
+
+
+      <div class="input-group">
+
+        <label>
+          Collection
+        </label>
+
+        <select id="collection">
+
+          <option>Urban Chaos</option>
+
+          <option>Roots Of The Mountain</option>
+
+          <option>Special Customization</option>
+
+        </select>
+
+      </div>
+
+
+
+
+
+      <div class="input-group">
+
+        <label>
+          Rate Your Experience
+        </label>
+
+        <div class="stars">
+
+          <span class="star" data-value="1">★</span>
+          <span class="star" data-value="2">★</span>
+          <span class="star" data-value="3">★</span>
+          <span class="star" data-value="4">★</span>
+          <span class="star" data-value="5">★</span>
+
+        </div>
+
+      </div>
+
+
+
+
+
+      <div class="input-group">
+
+        <label>
+          Your Review
+        </label>
+
+        <textarea
+          id="review"
+          placeholder="Write your experience with KOBORIO INC..."
+        ></textarea>
+
+      </div>
+
+
+
+
+
+      <button
+        class="submit-btn"
+        onclick="submitReview()"
+      >
+        Submit Review
+      </button>
+
+    </div>
+
+
+
+
+
+    <!-- RIGHT -->
+
+    <div class="review-wall">
+
+      <h2 class="section-title">
+        WARRIOR REVIEWS
+      </h2>
+
+      <div id="reviewsContainer">
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+  <script type="module" src="reviews.js"></script>
+
+</body>
+
+</html>
