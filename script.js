@@ -101,53 +101,118 @@ window.addEventListener("load", function(){
 
 function getPrice(fitType, qty){
 
-  // REGULAR
+  fitType = fitType.toLowerCase();
+
+
+
+
+  /* ========================= */
+  /* REGULAR */
+  /* ========================= */
 
   if(fitType === "regular"){
 
-    if(qty >= 1 && qty <= 5){
-      return 510;
+    if(qty >= 20){
+
+      return 449;
+
     }
 
-    else if(qty >= 6 && qty <= 9){
+    else if(qty >= 10){
+
+      return 480;
+
+    }
+
+    else if(qty >= 6){
+
       return 499;
-    }
 
-    else if(qty >= 10 && qty <= 15){
-      return 479;
     }
 
     else{
-      return 449;
+
+      return 549;
+
     }
 
   }
 
 
-  // OVERSIZED
 
-  else{
 
-    if(qty >= 1 && qty <= 5){
-      return 799;
+
+
+  /* ========================= */
+  /* OVERSIZED */
+  /* ========================= */
+
+  else if(fitType === "oversized"){
+
+    if(qty >= 20){
+
+      return 549;
+
     }
 
-    else if(qty >= 6 && qty <= 9){
-      return 749;
+    else if(qty >= 10){
+
+      return 599;
+
     }
 
-    else if(qty >= 10 && qty <= 15){
+    else if(qty >= 6){
+
       return 649;
+
     }
 
     else{
-      return 599;
+
+      return 699;
+
+    }
+
+  }
+
+
+
+
+
+
+  /* ========================= */
+  /* KIDS */
+  /* ========================= */
+
+  else if(fitType === "kids"){
+
+    if(qty >= 20){
+
+      return 349;
+
+    }
+
+    else if(qty >= 10){
+
+      return 379;
+
+    }
+
+    else if(qty >= 6){
+
+      return 399;
+
+    }
+
+    else{
+
+      return 449;
+
     }
 
   }
 
 }
-
 
 
 
