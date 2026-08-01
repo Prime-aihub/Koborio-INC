@@ -689,3 +689,177 @@ input{
   }
 
 }
+
+/* ==========================================
+   MOBILE STORE RESPONSIVE FIX
+   APPEND AT THE VERY BOTTOM
+========================================== */
+
+@media screen and (max-width:768px){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+  section{
+    width:95%;
+    padding:50px 0;
+  }
+
+  nav{
+    width:95%;
+    padding:15px 0;
+  }
+
+  .logo-img{
+    width:90px;
+  }
+
+  .nav-links{
+    gap:12px;
+  }
+
+  .nav-links a{
+    font-size:14px;
+  }
+
+  .hero{
+    height:auto;
+    min-height:90vh;
+    padding:100px 20px 60px;
+  }
+
+  .hero-content h1{
+    font-size:2.2rem;
+    line-height:1.2;
+  }
+
+  .hero-content p{
+    font-size:15px;
+    line-height:1.7;
+  }
+
+  .btn{
+    width:100%;
+    max-width:300px;
+    padding:14px;
+    text-align:center;
+  }
+
+  .section-title{
+    font-size:2rem;
+    margin-bottom:25px;
+  }
+
+  .collection-desc{
+    font-size:14px;
+    line-height:1.8;
+    margin-bottom:25px;
+    padding:0 5px;
+  }
+
+  .pricing-note{
+    font-size:12px;
+    line-height:1.6;
+    margin-bottom:25px;
+  }
+
+  .products-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+
+  .card{
+    width:100%;
+    border-radius:18px;
+  }
+
+  .card img{
+    width:100%;
+    height:auto;
+    aspect-ratio:1/1;
+    object-fit:cover;
+  }
+
+  .card-content{
+    padding:18px;
+  }
+
+  .card-content h3{
+    font-size:20px;
+  }
+
+  .price{
+    font-size:22px;
+  }
+
+  .selectors{
+    gap:14px;
+  }
+
+  select,
+  input,
+  .pincodeInput{
+    width:100%;
+    font-size:16px;
+  }
+
+  .shipping-price,
+  .final-total{
+    font-size:15px;
+  }
+
+  .glass-box{
+    padding:25px 18px;
+  }
+
+  .custom-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+  }
+
+  .custom-pricing{
+    padding:20px;
+  }
+
+  .custom-price-item{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:5px;
+  }
+
+  .footer{
+    padding:40px 15px;
+  }
+
+  .footer-content h2{
+    font-size:1.7rem;
+  }
+
+  .footer-content p{
+    font-size:14px;
+  }
+
+  .instagram-btn{
+    width:100%;
+    justify-content:center;
+  }
+
+  img{
+    max-width:100%;
+    display:block;
+  }
+
+  iframe,
+  video,
+  canvas{
+    max-width:100%;
+    height:auto;
+  }
+
+}  
