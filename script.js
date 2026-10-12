@@ -387,7 +387,7 @@ Please share payment details.`;
 
 
   window.open(
-    `https://wa.me/919004130508?text=${encodeURIComponent(message)}`,
+    `https://wa.me/917304888391?text=${encodeURIComponent(message)}`,
     '_blank'
   );
 
@@ -427,7 +427,7 @@ I will send my design image.`;
 
 
   window.open(
-    `https://wa.me/919004130508?text=${encodeURIComponent(message)}`,
+    `https://wa.me/917304888391?text=${encodeURIComponent(message)}`,
     '_blank'
   );
 
@@ -444,7 +444,7 @@ I want wholesale pricing details for bulk t-shirt orders.`;
 
 
   window.open(
-    `https://wa.me/919004130508?text=${encodeURIComponent(message)}`,
+    `https://wa.me/917304888391?text=${encodeURIComponent(message)}`,
     '_blank'
   );
 
@@ -461,7 +461,7 @@ I am interested in becoming a retail partner.`;
 
 
   window.open(
-    `https://wa.me/919004130508?text=${encodeURIComponent(message)}`,
+    `https://wa.me/917304888391?text=${encodeURIComponent(message)}`,
     '_blank'
   );
 
